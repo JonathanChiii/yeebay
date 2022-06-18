@@ -2,8 +2,21 @@ import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
 class ItemDetail extends Component {
-    /* this function renders the details of the item */
+    /* this component renders the details of the item */
+
+    componentDidMount(){
+        console.log("ItemDetail component did mount");
+    }
+
+    componentDidUpdate(){
+        console.log("ItemDetail component did update");
+
+    }
+
+
     render() {
+        console.log("ItemDetail component did rendered");
+
         let item = this.props.item;
         if (item != null) {
             let reviews = item.comments.map((comment) => {
