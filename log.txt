@@ -1,0 +1,57 @@
+2022-06-16T22:52:06.476Z [INFO]: # Cloning repository: git@github.com:JonathanChiii/yeebay.git
+2022-06-16T22:52:07.954Z [INFO]: Cloning into 'yeebay'...
+2022-06-16T22:52:07.955Z [INFO]: # Checking for Git submodules at: /codebuild/output/src345358130/src/yeebay/.gitmodules
+2022-06-16T22:52:07.982Z [INFO]: # Retrieving environment cache...
+2022-06-16T22:52:08.539Z [INFO]: # Retrieved environment cache
+2022-06-16T22:52:08.539Z [INFO]: ---- Setting Up SSM Secrets ----
+2022-06-16T22:52:08.539Z [INFO]: SSM params {"Path":"/amplify/d3c9tkn9w44nq4/main/","WithDecryption":true}
+2022-06-16T22:52:08.616Z [INFO]: No live updates for this build run
+2022-06-16T22:52:08.621Z [INFO]: # Retrieving cache...
+2022-06-16T22:52:08.663Z [INFO]: # Extracting cache...
+2022-06-16T22:52:08.670Z [INFO]: # Extraction completed
+2022-06-16T22:52:54.333Z [INFO]: ## Starting Backend Build
+                                 ## Checking for associated backend environment...
+                                 ## No backend environment association found, continuing...
+                                 ## Completed Backend Build
+2022-06-16T22:52:54.335Z [INFO]: {"backendDuration": 0}
+                                 ## Starting Frontend Build
+                                 # Starting phase: preBuild
+                                 # Executing command: npm ci
+2022-06-16T22:53:17.895Z [INFO]: > core-js@3.23.1 postinstall /codebuild/output/src345358130/src/yeebay/node_modules/core-js
+                                 > node -e "try{require('./postinstall')}catch(e){}"
+2022-06-16T22:53:17.940Z [INFO]: [96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+                                 [96mThe project needs your help! Please consider supporting of core-js:[0m
+                                 [96m>[94m https://opencollective.com/core-js [0m
+                                 [96m>[94m https://patreon.com/zloirock [0m
+                                 [96m>[94m bitcoin: bc1qlea7544qtsmj2rayg0lthvza9fau63ux0fstcz [0m
+                                 [96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+2022-06-16T22:53:18.134Z [INFO]: > core-js-pure@3.23.1 postinstall /codebuild/output/src345358130/src/yeebay/node_modules/core-js-pure
+                                 > node -e "try{require('./postinstall')}catch(e){}"
+2022-06-16T22:53:18.443Z [INFO]: added 1421 packages in 18.188s
+2022-06-16T22:53:18.456Z [INFO]: # Completed phase: preBuild
+                                 # Starting phase: build
+                                 # Executing command: npm run build
+2022-06-16T22:53:18.617Z [INFO]: > yeebay@0.1.0 build /codebuild/output/src345358130/src/yeebay
+                                 > react-scripts build
+2022-06-16T22:53:19.735Z [INFO]: Creating an optimized production build...
+2022-06-16T22:53:20.457Z [INFO]: Failed to compile.
+2022-06-16T22:53:20.457Z [INFO]: Module not found: Error: Can't resolve 'bootstrap/dist/css/bootstrap.min.css' in '/codebuild/output/src345358130/src/yeebay/src'
+2022-06-16T22:53:20.468Z [WARNING]: npm
+2022-06-16T22:53:20.468Z [WARNING]: ERR! code ELIFECYCLE
+                                    npm ERR! errno 1
+2022-06-16T22:53:20.470Z [WARNING]: npm
+2022-06-16T22:53:20.470Z [WARNING]: ERR! yeebay@0.1.0 build: `react-scripts build`
+                                    npm ERR! Exit status 1
+                                    npm ERR!
+                                    npm ERR! Failed at the yeebay@0.1.0 build script.
+                                    npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2022-06-16T22:53:20.475Z [WARNING]: 
+2022-06-16T22:53:20.475Z [WARNING]: npm ERR! A complete log of this run can be found in:
+                                    npm ERR!     /root/.npm/_logs/2022-06-16T22_53_20_470Z-debug.log
+2022-06-16T22:53:20.475Z [HELP]: Outputting the npm debug log
+                                 [object Promise]
+2022-06-16T22:53:20.478Z [ERROR]: !!! Build failed
+2022-06-16T22:53:20.478Z [ERROR]: !!! Non-Zero Exit Code detected
+2022-06-16T22:53:20.479Z [INFO]: # Starting environment caching...
+2022-06-16T22:53:20.479Z [INFO]: # Environment caching completed
+Terminating logging...
