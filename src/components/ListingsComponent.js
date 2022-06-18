@@ -11,12 +11,13 @@ class Listings extends Component {
     */
     /* all state has been moved to maincomponent */
 
+
+    /* this component doesn't maintain any local state, and purely work on the props that passed to it. */
+
+
+
     /* added to demo the life cycle methods of the component */
-    constructor(props){
-        super(props);
-        console.log("Lisiting component has been constructed");
-    }
-    componentDidMount(){
+    componentDidMount() {
         console.log("Listings component did mount");
     }
 

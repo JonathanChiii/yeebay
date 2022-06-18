@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
 class ItemDetail extends Component {
+    /* this component doesn't maintain any local state, and purely work on the props that passed to it. */
+
+
     /* this component renders the details of the item */
 
-    componentDidMount(){
+    componentDidMount() {
         console.log("ItemDetail component did mount");
     }
 
-    componentDidUpdate(){
+    componentDidUpdate() {
         console.log("ItemDetail component did update");
 
     }
