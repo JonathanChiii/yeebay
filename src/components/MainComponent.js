@@ -1,11 +1,12 @@
 import { Component } from 'react';
-import { Navbar, NavbarBrand } from 'reactstrap';
 /* import './App.css';
 styles are removes since this is a pure container componnet
 */
 import { ITEMS } from '../shared/items';
 import Listings from './ListingsComponent';
 import ItemDetail from './ItemdetailComponent';
+import Header from './HeaderComponent'
+import Footer from './FooterComponent';
 
 /* the main component is responsible for all the state of the program */
 class Main extends Component {
@@ -34,15 +35,10 @@ class Main extends Component {
     render() {
         return (
             <div className="App">
-                <Navbar dark color="primary">
-                    <div className='container'>
-                        <NavbarBrand href="http://google.com"> YeeBay </NavbarBrand>
-                    </div>
-                </Navbar>
-
+                <Header />
                 <Listings items={this.state.items} onClick={(itemID) => this.onItemSelect(itemID)} />
-
                 <ItemDetail item={this.state.items.filter((item) => item.id === this.state.selectedItem)[0]} />
+                <Footer />
             </div>
         );
     }

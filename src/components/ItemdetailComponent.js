@@ -24,10 +24,10 @@ class ItemDetail extends Component {
         if (item != null) {
             let reviews = item.comments.map((comment) => {
                 return (
-                    <div key={comment.id}>
+                    <React.Fragment key={comment.id}>
                         <CardText>Rating: {comment.rating}★ by: {comment.author}</CardText>
                         <CardText>" {comment.comment} "</CardText>
-                    </div>
+                    </React.Fragment>
                 )
 
             });
