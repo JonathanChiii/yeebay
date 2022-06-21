@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Main from './components/MainComponent';
 
@@ -6,10 +7,11 @@ import Main from './components/MainComponent';
 class App extends Component {
   render() {
     return (
-      /* the navbar was moved to the main component. */
-      <div className="App">
-        <Main />
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Main />
+        </div>
+      </BrowserRouter>
     );
   }
 }
