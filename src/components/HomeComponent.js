@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 
 function RenderCard({item}) {
+  //if you change {item} to props, and use props.item.image, this will still work!
   return (
     <Card>
       <CardImg src={item.image} alt={item.name} />
